@@ -182,7 +182,7 @@ p {
 
 .footer_tab {
   color: #a59678;
-  font-size: 1.3125;
+  font-size: 1.3125rem;
   font-weight: 600;
 }
 
@@ -227,4 +227,33 @@ p {
 .credits a {
   color: #a59678;
   font-size: 0.8rem;
+}
+
+@media (min-width: 700px) {
+  .aside {
+    display: flex;
+    gap: 2em;
+    margin: 0 auto;
+    width: 95%;
+  }
+
+  .footer .row {
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+  }
+
+  /* .footer_tab {
+    text-align: center;
+  }
+
+  .about {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .lists_flex {
+    justify-content: center;
+    gap: 8em;
+  } */
 }
