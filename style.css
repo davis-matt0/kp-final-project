@@ -11,6 +11,8 @@ body {
 
 p {
   font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 1.5rem;
 }
 
 a {
@@ -30,12 +32,6 @@ header {
   padding: 1em 0;
 }
 
-p {
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.5rem;
-}
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -46,14 +42,13 @@ p {
   padding-bottom: 0.5em;
 }
 
-.nav_list-primary,
-.nav_list-secondary {
+.nav_list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.nav_list-secondary {
+.nav_item-separate {
   margin-top: 2em;
 }
 
@@ -99,6 +94,7 @@ p {
   padding: 0.5em 2em;
   border-radius: 100px;
   font-size: 1.5rem;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
@@ -195,7 +191,6 @@ p {
 .lists_flex {
   display: flex;
   justify-content: space-between;
-  gap: 3em;
 }
 
 .lists_flex col {
@@ -206,7 +201,6 @@ p {
   list-style: none;
   margin: 0 auto;
   padding: 0;
-  /* text-align: center; */
 }
 
 .footer_list-item {
@@ -256,4 +250,103 @@ p {
     justify-content: center;
     gap: 8em;
   } */
+}
+
+@media (min-width: 1000px) {
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5em;
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  .nav_item {
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav_item-separate {
+    margin: 0;
+    margin-left: auto;
+  }
+
+  .logo {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav_list {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 3em;
+  }
+
+  .title {
+    line-height: 1em;
+    font-size: 5.625rem;
+    padding: 1em 0 2.5em 0;
+  }
+
+  .three_cols {
+    padding: 8em 0;
+  }
+
+  .main_section {
+    padding: 6em 0;
+  }
+
+  .main_section-heading {
+    font-size: 2.25rem;
+    width: 100%;
+  }
+
+  .main_section p {
+    width: 100%;
+  }
+
+  .main_image {
+    width: 100%;
+  }
+
+  .aside {
+    display: block;
+    width: 55%;
+  }
+
+  .box {
+    padding: 1em 1em;
+    margin-left: 5em;
+    width: 100%;
+  }
+
+  .footer {
+    margin: 0 auto;
+  }
+
+  .footer_heading {
+    font-size: 1.5rem;
+  }
+
+  .about {
+    width: 75%;
+  }
+
+  .lists_flex {
+    width: 100%;
+  }
+
+  .footer_list {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .credits {
+    margin-top: 5em;
+  }
 }
